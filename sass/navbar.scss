@@ -41,6 +41,7 @@
 
 .navbar .navbar-default .nav-collapse {
 	// background-color: #f8f8f8;
+	font-family: "Generica", sans-serif;
 }
 
 .navbar.navbar-inverse .nav-collapse {
@@ -82,4 +83,10 @@
 
 .navbar-default .navbar-nav > li > a {
 	color: white !important;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	&:hover {
+		color: #cdb897 !important;
+	}
 }

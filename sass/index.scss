@@ -1,6 +1,11 @@
 ---
 ---
-
+@import "bootstrap";
+@font-face
+{
+font-family: The Braggest;
+src: url('{{ site.baseurl }}/assets/fonts/The Braggest_Demo.otf');
+}
 .main-body {
 	max-width: 100%;
 }
@@ -12,6 +17,11 @@
 	width: 90vw;
 	height: 40vh;
 	background-color: white;
+	text-align: center;
+	h1 {
+	font-family: "The Braggest", sans-serif;
+	font-size: 70pt !important;
+}
 }
 
 .welcome {
