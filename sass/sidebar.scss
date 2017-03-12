@@ -1,0 +1,55 @@
+---
+---
+@import "bootstrap";
+
+// SIDEBAR
+
+.sidebar {
+	text-align: center;
+	color: #c0c0c0;
+  font-family: "PT Serif", serif;
+  font-size: 15pt;
+
+  a, a:active {
+    color: #b1b1b1;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #cdb897;
+  }
+}
+
+h1 {
+	font-family: "Code", sans-serif;
+  font-size: 18pt;
+  letter-spacing: 5px;
+  color: #8d8d8d;
+}
+
+h2 {
+  font-family: "Code", sans-serif;
+  font-size: 22pt;
+  line-height: 30pt;
+
+}
+
+hr {
+ border: 0;
+
+&:after {
+  font-family: 'Myriad Pro', serif;
+  font-size: 50pt;
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(70deg);
+	-moz-transform: rotate(70deg);
+	transform: rotate(70deg);
+ }
+}

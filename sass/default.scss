@@ -12,10 +12,13 @@
 // $font-1
 // $font-2
 // $font-3
-
+body {
+	background-color: #f2f2f2 !important;
+}
 
 .container-fluid {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0px;
+
 }
