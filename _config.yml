@@ -25,6 +25,8 @@ twitter_username:
 github_username:
 sass:
     sas_dirr: /sass
+    style: compressed
+    
 # Pagination goes here
 #
 #
