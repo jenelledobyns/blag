@@ -1,0 +1,30 @@
+---
+---
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/default.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/navbar.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/footer.css">
+</head>
+
+{% include navbar.html %}
+
+<div class="row">
+<div class="col-sm-8 content">
+{{ content }}
+</div>
+
+
+<div class="col-sm-4 sidebar">
+{% include sidebar.html %}
+</div>
+</div>
+
+
+
+
+{% include footer.html %}
+
+
