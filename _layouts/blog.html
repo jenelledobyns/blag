@@ -9,26 +9,30 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/sass/navbar.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/sass/footer.css">
 </head>
+<body>
 
 {% include navbar.html %}
 <br>
 <br>
 <br>
+<div class="container">
+  <div class="row title">
+    <h1>Blog Name</h1>
+  </div>
 
 <div class="row">
-<div class="col-sm-8 content">
+<div class="col-sm-9 content">
 {{ content }}
 </div>
 
 
-<div class="col-sm-4 sidebar">
+<div class="col-sm-3 sidebar">
 {% include sidebar.html %}
 </div>
 </div>
 
-
-
+</div>
 
 {% include footer.html %}
 
-
+</body>

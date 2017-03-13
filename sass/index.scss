@@ -1,19 +1,29 @@
 ---
 ---
-
+@import "bootstrap";
+@font-face
+{
+font-family: The Braggest;
+src: url('{{ site.baseurl }}/assets/fonts/The Braggest_Demo.otf');
+}
 .main-body {
-	background-color: #e2e2e2;
 	max-width: 100%;
 }
 
 .header {
-	margin: 0 auto; 
+	margin: 0 auto;
 	margin-top: 80px;
 	margin-bottom: 50px;
 	width: 90vw;
 	height: 40vh;
-	background-color: #9286a8;
-} 
+	background-color: white;
+	text-align: center;
+	h1 {
+	font-family: "The Braggest", sans-serif;
+	font-size: 70pt !important;
+}
+}
+
 
 .welcome {
 	margin: 0 auto;
@@ -140,7 +150,7 @@ h2 {
 		.minimalism {
 			background-color: #9286a8;
 			height: 90%;
-			width: 90%;		
+			width: 90%;
 			margin: 0 auto;
 			margin-bottom: 10px;
 		}
