@@ -9,6 +9,7 @@
 	color: #c0c0c0;
   font-family: "PT Serif", serif;
   font-size: 15pt;
+  padding: 10px;
 
   a, a:active {
     color: #b1b1b1;
@@ -36,20 +37,33 @@ h2 {
 
 hr {
  border: 0;
+ font-family: 'PT Serif', serif;
+ font-size: 50px;
+ content: '§';
+ display: inline-block;
+ position: relative;
+ // top: -14px;
+ padding: 0px;
+ background: #f0f0f0;
+ color: #8c8b8b;
+ -webkit-transform: rotate(70deg);
+ -moz-transform: rotate(70deg);
+ transform: rotate(70deg);
+ // margin: 0;
 
 &:after {
-  font-family: 'Myriad Pro', serif;
-  font-size: 50pt;
-	content: '§';
-	display: inline-block;
-	position: relative;
-	top: -14px;
-	padding: 0 10px;
-	background: #f0f0f0;
-	color: #8c8b8b;
-	font-size: 18px;
-	-webkit-transform: rotate(70deg);
-	-moz-transform: rotate(70deg);
-	transform: rotate(70deg);
+  // font-family: 'PT Serif', serif;
+  // font-size: 50px;
+	// content: '§';
+	// display: inline-block;
+	// position: relative;
+	// // top: -14px;
+	// padding: 0px;
+	// background: #f0f0f0;
+	// color: #8c8b8b;
+	// -webkit-transform: rotate(70deg);
+	// -moz-transform: rotate(70deg);
+	// transform: rotate(70deg);
+  // // margin: 0;
  }
 }
