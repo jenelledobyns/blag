@@ -2,13 +2,13 @@
 ---
 @import "bootstrap";
 
-
 .navbar-default {
 	background-color: #a8a8a8 !important;
 	.navbar-brand {
 		color: white !important;
 		position: relative;
 		z-index: 2;
+		border-color: #a8a8a8 !important;
 	}
 }
 
@@ -38,6 +38,13 @@
 	width: 100%;
 }
 
+.navbar > .navbar-default > .navbar-fixed-top {
+	border-width: 0px !important;
+	border-color: #a8a8a8 !important;
+}
+.navbar-default {
+	border-width: 0px !important;
+}
 
 .navbar .navbar-default .nav-collapse {
 	// background-color: #f8f8f8;
