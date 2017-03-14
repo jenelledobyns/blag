@@ -1,8 +1,12 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2017-03-11 09:31:04 -0700
-categories: jekyll update
+layout: blog
+title: Hello World - Test Post 1
+author: Jenelle Dobyns
+category: career
+date: January 24th, 2017
+cover: assets/images/post1.jpg
+excerpt:  Excerpts get the reader excited to read the blog post behind the link. They should be two or three sentences long.
+tags: [does, this, work]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

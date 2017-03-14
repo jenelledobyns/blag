@@ -1,82 +1,95 @@
 ---
 layout: blog
+pagination:
+  enabled: true
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/sass/blog.css">
 
 
-
 <div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <img class="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/ba/de/48bade30cf4264101ec7dd21c6a5ba69.jpg">
-
-      <h1>Blag Article Here</h1>
-      <h2> Career // Jan 28, 2017 </h2>
-      <p>Lorem Ipsum this is filler text for the article lorem ipsum filler filler text for the arty arty article and stuffs </p>
-    </div>
-
-    <div class="col-sm-6">
-      <img class="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/ba/de/48bade30cf4264101ec7dd21c6a5ba69.jpg">
-
-      <h1>Longy Longer Blag Article Here</h1>
-      <h2> Career // Jan 28, 2017 </h2>
-      <p>Lorem Ipsum this is filler text for the article lorem ipsum filler filler text for the arty arty article and stuffs </p>
-    </div>
+  <div class="row sort">
+    <h2>Recent</h2>
   </div>
   <div class="row">
-    <div class="col-sm-6">
-      <img class="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/ba/de/48bade30cf4264101ec7dd21c6a5ba69.jpg">
+    {% for post in paginator.posts limit: 2 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
 
-      <h1>Blag Article Here</h1>
-      <h2> Career // Jan 28, 2017 </h2>
-      <p>Lorem Ipsum this is filler text for the article lorem ipsum filler filler text for the arty arty article and stuffs </p>
-    </div>
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.category }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    </a>
+    {% endfor %}
 
-    <div class="col-sm-6">
-      <img class="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/ba/de/48bade30cf4264101ec7dd21c6a5ba69.jpg">
-
-      <h1>Blag Article Here</h1>
-      <h2> Career // Jan 28, 2017 </h2>
-      <p>Lorem Ipsum this is filler text for the article lorem ipsum filler filler text for the arty arty article and stuffs </p>
-    </div>
   </div>
+
+
 
   <div class="row">
-    <div class="col-sm-6">
-      <img class="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/ba/de/48bade30cf4264101ec7dd21c6a5ba69.jpg">
+    {% for post in paginator.posts limit: 2 offset: 2 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
 
-      <h1>Blag Article Here</h1>
-      <h2> Career // Jan 28, 2017 </h2>
-      <p>Lorem Ipsum this is filler text for the article lorem ipsum filler filler text for the arty arty article and stuffs </p>
-    </div>
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.category }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    </a>
+    {% endfor %}
 
-    <div class="col-sm-6">
-      <img class="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/ba/de/48bade30cf4264101ec7dd21c6a5ba69.jpg">
-
-      <h1>Blag Article Here</h1>
-      <h2> Career // Jan 28, 2017 </h2>
-      <p>Lorem Ipsum this is filler text for the article lorem ipsum filler filler text for the arty arty article and stuffs </p>
-    </div>
   </div>
+
+
 
   <div class="row">
-    <div class="col-sm-6">
-      <img class="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/ba/de/48bade30cf4264101ec7dd21c6a5ba69.jpg">
+    {% for post in paginator.posts limit: 2 offset: 4 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
 
-      <h1>Blag Article Here</h1>
-      <h2> Career // Jan 28, 2017 </h2>
-      <p>Lorem Ipsum this is filler text for the article lorem ipsum filler filler text for the arty arty article and stuffs </p>
-    </div>
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.category }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    </a>
+    {% endfor %}
 
-    <div class="col-sm-6">
-      <img class="image" src="https://s-media-cache-ak0.pinimg.com/originals/48/ba/de/48bade30cf4264101ec7dd21c6a5ba69.jpg">
-
-      <h1>Blag Article Here</h1>
-      <h2> Career // Jan 28, 2017 </h2>
-      <p>Lorem Ipsum this is filler text for the article lorem ipsum filler filler text for the arty arty article and stuffs </p>
-    </div>
   </div>
 
-  
+
+
+  <div class="row">
+    {% for post in paginator.posts limit: 2 offset: 6 %}
+    <a href="{{ post.url }}">
+      <div class="col-sm-6">
+        <img class="image" src="{{ site.baseurl }}/{{ post.cover }}">
+
+        <h1>{{ post.title }}</h1>
+        <h2> {{ post.category }} // {{ post.date | date: '%B %d, %Y' }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
+
+
+  {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left" aria-hidden="true"></i>  Newer Posts</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        {% endif %}
+    </ul>
+    {% endif %}
 </div>

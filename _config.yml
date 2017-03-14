@@ -26,22 +26,28 @@ github_username:
 sass:
     sas_dirr: /sass
     style: compressed
-    
-# Pagination goes here
-#
-#
-#
-#
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 8
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+permalink: /:year/:month/:title.html
 
 
 
-# Build settings 
+# Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
   - jekyll-bootstrap-sass
-  
+
 exclude:
   - Gemfile
   - Gemfile.lock
