@@ -134,10 +134,16 @@ img {
 }
 
 .sort {
-	padding: 20px;
+	padding: 0 20px 20px 20px;
 
 	h2 {
 		text-align: left;
 		font-size: 18pt;
+	}
+
+	.fa {
+		font-size: 12pt;
+		line-height: 12pt;
+		vertical-align: middle;
 	}
 }
