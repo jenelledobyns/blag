@@ -181,6 +181,10 @@ h2 {
   p {
   	font-size: 14pt;
     margin: 20px;
+    text-align:center;
+  }
+  .form {
+  	margin-top: 20px;
   }
 }
 
@@ -196,7 +200,7 @@ button, input, textarea {
 }
 .ajax-form {
   width: 100%;
-}
+} 
 .ajax-form input,
 .ajax-form textarea {
   padding: 20px;
