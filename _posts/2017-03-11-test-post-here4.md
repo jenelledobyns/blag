@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: Here We Are, Running Some Tests
 author: Jenelle Dobyns
 category: career

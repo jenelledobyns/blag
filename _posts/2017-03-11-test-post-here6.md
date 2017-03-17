@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: Hola mundo
 author: Jenelle Dobyns
 category: career

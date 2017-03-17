@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: Shiet
 author: Jenelle Dobyns
 category: career

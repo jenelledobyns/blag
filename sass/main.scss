@@ -1,0 +1,24 @@
+---
+---
+$baseurl: "{{ site.baseurl }}";
+
+@font-face
+{
+font-family: Code;
+src: url("$baseurl" + "/assets/fonts/CODE_Bold.woff");
+}
+
+@font-face
+{
+font-family: Generica;
+src: url("$baseurl" + "/assets/fonts/Generica.otf");
+}
+
+@font-face
+{
+font-family: The Braggest;
+src: url("$baseurl" + "/assets/fonts/The Braggest_Demo.otf");
+}
+
+@import "bootstrap";
+@import "default";

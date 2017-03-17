@@ -1,6 +1,27 @@
 ---
 ---
-@import "bootstrap";
+
+@import "default";
+
+@font-face
+{
+font-family: Code;
+src: url("{{ site.baseurl }}/assets/fonts/CODE_Bold.woff");
+}
+
+@font-face
+{
+font-family: Generica;
+src: url("{{ site.baseurl }}/assets/fonts/Generica.otf");
+}
+
+@font-face
+{
+font-family: The Braggest;
+src: url("{{ site.baseurl }}/assets/fonts/The Braggest_Demo.otf");
+}
+
+
 $box-background: #eee;
 $bar-height: 12px;
 $bar-color: white;
@@ -16,8 +37,9 @@ $transition: all 0.25s;
 }
 
 .container {
-	width: 90%;
-} 
+	width: 95% !important;
+	max-width: 1280px;
+}
 
 .title {
 	h1 {
@@ -49,8 +71,9 @@ img {
 	margin: 0;
   text-align: center;
   .container {
-		width: 100%;
+		width: 100% !important;
 		padding: 20px;
+		margin: 0 auto;
 	}
 
 	// .row {
@@ -89,14 +112,29 @@ img {
 		color: #666;
 	}
 }
+@media (min-width:768px) {
+	.image {
+		height: 210px;
+	}
+}
+
+@media (min-width:1024px) {
+	.image {
+		height: 250px;
+	}
+}
 
 .image {
 	position: relative;
   width: 100%;
+height: auto;
+overflow:hidden;
   height: 250px;
   // padding-bottom: 50%;
   background: #c0c0c0;
   cursor: pointer;
+
+
 
 	// &:before,
 	// 	&:after {

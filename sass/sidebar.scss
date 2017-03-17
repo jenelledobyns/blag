@@ -1,6 +1,7 @@
 ---
 ---
-@import "bootstrap";
+
+@import "default";
 
 // SIDEBAR
 
@@ -19,6 +20,10 @@
   a:hover {
     color: #cdb897;
   }
+
+	img {
+		max-width: 100%;
+	}
 }
 
 h1 {

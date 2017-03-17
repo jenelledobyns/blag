@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: Hello World - Test Post 1
 author: Jenelle Dobyns
 category: career

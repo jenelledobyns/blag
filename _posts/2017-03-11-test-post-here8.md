@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: Howdy partners! This here's a blog test.
 author: Jenelle Dobyns
 category: career

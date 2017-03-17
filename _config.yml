@@ -24,8 +24,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
 sass:
-    sas_dirr: /sass
-    style: compressed
+    sass_dir: _sass
 
 # Pagination Settings
 pagination:

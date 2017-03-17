@@ -1,10 +1,23 @@
 ---
 ---
-@import "bootstrap";
+@import "default";
+
+@font-face
+{
+font-family: Code;
+src: url("{{ site.baseurl }}/assets/fonts/CODE_Bold.woff");
+}
+
+@font-face
+{
+font-family: Generica;
+src: url("{{ site.baseurl }}/assets/fonts/Generica.otf");
+}
+
 @font-face
 {
 font-family: The Braggest;
-src: url('{{ site.baseurl }}/assets/fonts/The Braggest_Demo.otf');
+src: url("{{ site.baseurl }}/assets/fonts/The Braggest_Demo.otf");
 }
 
 .main-body {
@@ -120,7 +133,7 @@ h2 {
 		width:100%;
 		min-height:150px;
 		text-align:center;
-		margin: 0 auto; 
+		margin: 0 auto;
 	}
 	.col-sm-6 {
 		background-color: white;
@@ -201,7 +214,7 @@ button, input, textarea {
 }
 .ajax-form {
   width: 100%;
-} 
+}
 .ajax-form input,
 .ajax-form textarea {
   padding: 20px;
@@ -234,7 +247,7 @@ button, input, textarea {
   color: white;
 }
 .name, .email {
-  width: 90%; 
+  width: 90%;
 }
 .message {
   width: 100%;

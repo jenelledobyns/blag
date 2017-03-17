@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: I'm running out of creative titles
 author: Jenelle Dobyns
 category: career
