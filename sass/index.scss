@@ -26,17 +26,33 @@ src: url("{{ site.baseurl }}/assets/fonts/The Braggest_Demo.otf");
 
 .header {
 	margin: 0 auto;
-	margin-top: 80px;
-	margin-bottom: 50px;
-	width: 90vw;
-	height: 40vh;
+	width: 100%;
+	height: 100vh;
 	background-color: white;
 	text-align: center;
-	// background: url("{{ site.baseurl }}/assets/images/titleimg1.jpg") no-repeat center center;
-	// background-size: cover;
+	background: url("{{ site.baseurl }}/assets/images/header.jpg") no-repeat center center;
+	background-size: cover;
+  background-attachment: fixed;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+
+	.caption {
+		max-width: 60%;
+		text-align: center;
 	h1 {
 	font-family: "The Braggest", sans-serif;
-	font-size: 70pt !important;
+	font-size: 100pt !important;
+	color: white;
+	line-height: 50pt;
+}
+
+h2 {
+	font-family: "Martel", serif;
+	font-size: 20pt;
+	color: white;
+
+}
 }
 }
 

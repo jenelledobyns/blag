@@ -3,12 +3,12 @@
 @import "bootstrap";
 
 .navbar-default {
-	background-color: #a8a8a8 !important;
+	background-color: #fff !important;
 	.navbar-brand {
-		color: white !important;
+		color: #3b6a5a !important;
 		position: relative;
 		z-index: 2;
-		border-color: #a8a8a8 !important;
+		border-color: #fff !important;
 	}
 }
 
@@ -52,7 +52,7 @@
 }
 
 .navbar.navbar-inverse .nav-collapse {
-	background-color: #222;
+	background-color: #fff;
 }
 
 .navbar .nav-collapse .navbar-form {
@@ -89,11 +89,16 @@
 // STUFF IVE ADDED
 
 .navbar-default .navbar-nav > li > a {
-	color: white !important;
+	color: #729f90 !important;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 
 	&:hover {
 		color: #cdb897 !important;
 	}
+}
+
+.navbar-right {
+	font-family: 'Martel', serif;
+	font-size: 20pt !important;
 }
