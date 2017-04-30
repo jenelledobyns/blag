@@ -3,7 +3,7 @@
 @import "bootstrap";
 
 .navbar-default {
-	background: transparent !important;
+  background: transparent !important;
 	.navbar-brand {
 		color: #fff !important;
 		position: relative;
@@ -101,26 +101,26 @@
 .navbar-right {
 	font-family: 'Martel', serif;
 	font-size: 20pt !important;
+  font-variant: small-caps;
 }
 
 .navbar-fixed-top.scrolled {
-
   background-color: #fff !important;
-  color: #3b6a5a !important;
+  color: #4391ab !important;
   transition: 0.8s;
   -webkit-transition:  0.8s;
   a {
-    color: #3b6a5a !important;
+    color: #4391ab !important;
   }
 }
 
 .navbar-default.scrolled .navbar-nav.scrolled > li > a {
-
-	color: #3b6a5a !important;
+	color: #4391ab !important;
   transition: 0.8s;
   -webkit-transition:  0.8s;
   &:hover {
     color: #cdb897 !important;
-		transition: none;
+    transition: none;
+
   }
 }

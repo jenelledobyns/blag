@@ -5,21 +5,34 @@
 
 <head>
 <link rel="stylesheet" href="{{ site.baseurl }}/sass/blog.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/sass/navbar.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/navbar2.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/sass/footer.css">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script
+   src="https://code.jquery.com/jquery-3.2.1.js"
+   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+   crossorigin="anonymous"></script>
+ <script>
+ $(function () {
+   $(document).scroll(function () {
+     var $nav = $(".navbar-fixed-top, .navbar-default, .navbar-nav");
+     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+   });
+ });
+ </script>
+
 </head>
 <body>
 
 {% include navbar.html %}
-<br>
-<br>
-<br>
-<div class="container">
-  <div class="row title">
-    <h1>Noble Vita</h1>
-  </div>
 
+<div class="header">
+  <div class="caption">
+    <h1>Noble Vita</h1>
+    <h2>Lifestyle design for the adventurous.</h2>
+  </div>
+  </div>
+<div class="container">
 <div class="row">
 <div class="col-sm-9 content">
 {{ content }}
