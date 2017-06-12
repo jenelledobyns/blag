@@ -2,22 +2,28 @@
 ---
 $baseurl: "{{ site.baseurl }}";
 
+@font-face {
+  font-family: Bebas Neue;
+  src: url('/assets/fonts/BebasNeue.otf');
+}
+
+
 @font-face
 {
 font-family: Code;
-src: url("$baseurl" + "/assets/fonts/CODE_Bold.woff");
+src: url("/assets/fonts/CODE_Bold.woff");
 }
 
 @font-face
 {
 font-family: Generica;
-src: url("$baseurl" + "/assets/fonts/Generica.otf");
+src: url("/assets/fonts/Generica.otf");
 }
 
 @font-face
 {
 font-family: The Braggest;
-src: url("$baseurl" + "/assets/fonts/The Braggest_Demo.otf");
+src: url("/assets/fonts/The Braggest_Demo.otf");
 }
 
 @import "bootstrap";
