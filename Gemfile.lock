@@ -44,6 +44,10 @@ GEM
     mercenary (0.3.6)
     minima (2.1.0)
       jekyll (~> 3.3)
+    octopress-hooks (2.6.2)
+      jekyll (>= 2.0)
+    octopress-paginate (1.2.0)
+      octopress-hooks
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -64,10 +68,11 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-paginate-v2
   minima (~> 2.0)
+  octopress-paginate
   tzinfo-data
 
 RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.14.6
+   1.15.1

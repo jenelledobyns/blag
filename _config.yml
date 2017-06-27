@@ -48,6 +48,8 @@ theme: minima
 gems:
   - jekyll-feed
   - jekyll-bootstrap-sass
+  - octopress-paginate
+
 
 exclude:
   - Gemfile
