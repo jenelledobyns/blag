@@ -56,5 +56,6 @@ exclude:
   - Gemfile.lock
 
 
-  sass:
-    sass_dir: ./sass
+
+sass:
+  sass_dir: ./_sass
