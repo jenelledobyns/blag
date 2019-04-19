@@ -1,0 +1,91 @@
+---
+---
+
+@import "default";
+
+@font-face
+{
+font-family: Code;
+src: url("{{ site.baseurl }}/assets/fonts/CODE_Bold.woff");
+}
+
+@font-face
+{
+font-family: Generica;
+src: url("{{ site.baseurl }}/assets/fonts/Generica.otf");
+}
+
+@font-face
+{
+font-family: The Braggest;
+src: url("{{ site.baseurl }}/assets/fonts/The Braggest_Demo.otf");
+}
+
+
+.container {
+	width: 95% !important;
+  text-align: center;
+}
+
+.title {
+	h1 {
+		font-family: "The Braggest", sans-serif;
+		font-size: 70pt;
+		text-align: center;
+		letter-spacing: -2px;
+	}
+
+	margin-bottom: 30px;
+}
+
+
+img {
+	height: 400px;
+	width: 250px;
+	margin: 0 auto;
+}
+
+
+.col-sm-9 {
+	padding: 20px;
+}
+
+.content {
+	background-color: #fff;
+	width: 100%;
+	margin: 0;
+  text-align: center;
+	padding: 0;
+  margin: 0;
+
+
+  h1 {
+		font-family: "Generica", sans-serif;
+		font-size: 46pt;
+    line-height: 40pt;
+		text-transform: uppercase;
+		letter-spacing: 0px;
+		color: #787878;
+		padding: 0;
+		margin:  20px 0 0 0;
+	}
+
+	h2 {
+		font-family: "Code", sans-serif;
+		font-size: 18pt;
+		line-height: 24pt;
+		letter-spacing: 3px;
+    padding: 0 0 30px 0;
+		margin: 0;
+		color: #b0b0b0;
+	}
+
+	p {
+		font-family: "PT Serif", serif;
+		font-size: 15pt;
+    line-height: 26pt;
+		color: #666;
+    text-indent: 40px;
+    padding: 0 20px 0 20px;
+	}
+}

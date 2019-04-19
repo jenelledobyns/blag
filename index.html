@@ -1,0 +1,185 @@
+---
+layout: page
+---
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+ <link rel="stylesheet" href="{{ site.baseurl }}/sass/index.css">
+ <link rel="stylesheet" href="{{ site.baseurl }}/sass/slick.css">
+ <!-- Page Specific JAVASCRIPT -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+   <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"> </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"> </script>
+
+   <script
+     src="https://code.jquery.com/jquery-3.2.1.js"
+     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+     crossorigin="anonymous"></script>
+   <script>
+   $(function () {
+     $(document).scroll(function () {
+       var $nav = $(".navbar-fixed-top, .navbar-default, .navbar-nav");
+       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+     });
+   });
+
+
+   var userFeed = new Instafeed({
+  get: 'user',
+  userId: '1254866241',
+  clientId: '7f2420d9705445b8a8998165faecdef1',
+  accessToken: '1254866241.1677ed0.1f81c4a2ad9542ebbc51769a2b78a3a6',
+  resolution: 'standard_resolution',
+  template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+  sortBy: 'most-recent',
+  limit: 6,
+  links: false
+});
+userFeed.run();
+
+   </script>
+
+</head>
+
+<body>
+
+
+
+	<div class="header">
+    <div class="caption">
+   <h1>Live bold. Live noble.</h1>
+   <h2>Lifestyle design for the adventurous.</h2>
+   <button type="button" class="btn btn-primary btn-lg outline">Start Here</button>
+ </div>
+  </div>
+
+
+
+
+<div class="welcome-container">
+  <div class="welcome row">
+		<h1>Noble Vita: Lifestyle design for the adventurous.</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    <!--<button type="button" class="btn btn-primary btn-lg outline">Start Here</button>-->
+
+
+	<!--<div class="welcome-right col-sm-4">
+		<img class = "picture" src="{{ base.url }}/assets/images/MHS-170.jpg">
+	</div>-->
+</div>
+</div>
+
+
+<div class="main-body container-fluid">
+
+<div class="container">
+  <div class="top">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="image">
+        <img src="{{ site.baseurl }}/assets/images/post5.jpg">
+        <div class="overlay">
+        <div class="caption">
+          <div class="maincaption">
+           <h1>Blog</h1>
+          </div>
+          <div class="subcaption">
+           <h2>This post is in progress. In the meantime, please explore other sections of the website!</h2>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="image">
+        <img src="{{ site.baseurl }}/assets/images/post1.jpg">
+        <div class="overlay">
+        <div class="caption">
+          <div class="maincaption">
+           <h1>Lifestyle</h1>
+          </div>
+          <div class="subcaption">
+           <h2>This post is in progress. In the meantime, please explore other sections of the website!</h2>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="image">
+        <img src="{{ site.baseurl }}/assets/images/MHS-170.jpg">
+        <div class="overlay">
+        <div class="caption">
+          <div class="maincaption">
+           <h1>About</h1>
+          </div>
+          <div class="subcaption">
+           <h2>This post is in progress. In the meantime, please explore other sections of the website!</h2>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+
+
+
+<div class="container blog">
+  <h1>Connect with me!</h1>
+  <div class="row">
+    <div class="col-sm-6">
+        <div id="instafeed">
+          </div>
+<h2><a href="http://instagram.com/noblevita">@noblevita</a></h2>
+    </div>
+    <div class="col-sm-6 containervid">
+
+
+<aside id="video">
+      <iframe src="https://www.youtube.com/embed/EreZNkWzBAw" frameborder="0" allowfullscreen></iframe>
+    </aside>
+    <h2><a href="http://youtube.com/noblevita">@noblevita</a></h2>
+</div>
+  </div>
+</div>
+
+
+</div>
+
+<div class="subscribe container-fluid">
+  <div class="email-full">
+    <h1>Want more?</h1>
+    <p> Subscribe for the latest updates so you'll never miss a post!</p>
+      <form class="ajax-form" method="POST" action="http://formspree.io/jenelledobyns@gmail.com">
+        <div class="container-fluid">
+          <div class="row form">
+            <div class="col-sm-9">
+              <input type="text" class="email" name="email" placeholder="Your email address">
+            </div>
+            <div class="col-sm-3">
+              <button type="submit" class="btn btn-primary btn-lg outline">Subscribe</button>
+            </div>
+        </div>
+      </form>
+    <div class="form-thank-you">
+      <h3>Thanks for Subscribing!</h3>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+</body>

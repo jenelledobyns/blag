@@ -1,0 +1,30 @@
+---
+---
+$baseurl: "{{ site.baseurl }}";
+
+@font-face {
+  font-family: Bebas Neue;
+  src: url('/assets/fonts/BebasNeue.otf');
+}
+
+
+@font-face
+{
+font-family: Code;
+src: url("/assets/fonts/CODE_Bold.woff");
+}
+
+@font-face
+{
+font-family: Generica;
+src: url("/assets/fonts/Generica.otf");
+}
+
+@font-face
+{
+font-family: The Braggest;
+src: url("/assets/fonts/The Braggest_Demo.otf");
+}
+
+@import "bootstrap";
+@import "default";

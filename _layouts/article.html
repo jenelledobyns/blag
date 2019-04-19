@@ -1,0 +1,48 @@
+---
+---
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/article.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/navbar.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/sass/footer.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+{% include navbar.html %}
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row title">
+    <h1>Noble Vita</h1>
+  </div>
+
+<div class="row">
+<div class="col-sm-9 content">
+
+
+  <div class="article">
+   <h1> {{ page.title }} </h1>
+    <h2> {{ page.category }} // {{ page.date | date: '%B %d, %Y' }}</h2>
+
+{{ content }}
+
+  </div>
+
+
+</div>
+
+
+<div class="col-sm-3 sidebar">
+{% include sidebar.html %}
+</div>
+</div>
+
+</div>
+
+{% include footer.html %}
+
+</body>
